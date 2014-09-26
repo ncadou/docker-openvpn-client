@@ -4,7 +4,7 @@ FROM debian:jessie
 MAINTAINER Nicolas Cadou <ncadou@cadou.ca>
 
 RUN apt-get update && \
-    apt-get install -y dnsutils iputils-ping openvpn traceroute unzip && \
+    apt-get install -y dnsutils iputils-ping net-tools openvpn traceroute unzip && \
     apt-get clean
 
 # Private Internet Access client.
